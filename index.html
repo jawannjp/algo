@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="menuBtn" class="menuBtn">
+      <div class="menuBtn__content"></div>
+    </button>
+    <header id="header" class="header">
+      <div class="header__top">
+        <button class="header__logout">
+          <ion-icon class="header__logIcon" name="power-outline"></ion-icon>
+        </button>
+        <p class="firstname">John</p>
+      </div>
+      <nav class="header__nav">
+        <button class="header__cat">Tous</button>
+        <button class="header__cat">Maison</button>
+        <button class="header__cat">Travail</button>
+        <button class="header__cat">Code</button>
+      </nav>
+      <button id="addTaskBtn" class="header__addTask">Ajouter</button>
+    </header>
+    <main class="main">
+      <div class="main__scroll">
+        <div class="task">
+          <div class="task__content">
+            <h2 class="task__title">Faire les courses</h2>
+            <div class="task__priority"></div>
+            <div class="task__date">
+              <ion-icon class="task__dateIcon" name="time-outline"></ion-icon>
+              <p class="task__dateText">04 juin 2024</p>
+            </div>
+            <div class="task__data">
+              <div class="task__filter">
+                <ion-icon
+                  class="task__filterIcon"
+                  name="filter-outline"
+                ></ion-icon>
+                <p>Maison</p>
+              </div>
+              <button class="task__delete">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div class="task__action">
+            <div class="task_checkBox" type="checkbox"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="addTaskPopup" class="addTask">
+      <h2 class="addTask__title">Nouvelle Tâche</h2>
+      <div class="addTask__inputs">
+        <input class="addTask__input" type="text" placeholder="nom" />
+        <input class="addTask__input" type="text" placeholder="category" />
+      </div>
+      <div class="addTask__priority"></div>
+      <div class="addTask__actions">
+        <button class="addTask__cancel">Annuler</button>
+        <button class="addTask__validate">Valider</button>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
